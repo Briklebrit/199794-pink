@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Pink-конкурс</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="off-screen">Конкурс на самое безбашеное путешествие с Пинк</h1>
+      <nav class="main-nav main-nav--closed">
+        <h2 class="off-screen">Главное меню сайта:</h2>
+        <a class="main-nav__logo" href="index.html">
+          <img src="http://placehold.it/150x100" alt="Pink">
+          <span class="off-screen">- главная страница сайта</span>
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <h2 class="off-screen">Форма участника конкурса:</h2>
+      <p class="form__call">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        Пожалуйста, заполните форму ниже:
+      </p>
+      <form class="form" action="form.html" method="post">
+        <fieldset class="form__user-data user-data">
+          <legend class="off-screen">Ваше имя:</legend>
+          <label class="user-surname">Фамилия:
+            <input type="text" name="user-surname" value="Укажите фамилию">
+          </label>
+          <label class="user-name">Имя:
+            <input type="text" name="user-surname" value="Введите ваше имя">
+          </label>
+          <label class="user-patronymic">Отчество:
+            <input type="text" name="user-patronymic" value="Ну и отчество тоже">
+          </label>
+        </fieldset>
+        <fieldset class="form__user-gains user-gains">
+          <legend class="user-gains__title">Ваши безбашенные достижения в путешествии<span class="off-screen">:</span></legend>
+          <label class="user-gain">
+            <span class="user-gain__indicator"></span>
+            <input type="checkbox" name="selfie" checked>Сделал селфи с акулой
+          </label>
+          <label class="user-gain">
+            <span class="user-gain__indicator"></span>
+            <input type="checkbox" name="burn" checked>Сгорел на пляже
+          </label>
+          <label class="user-gain">
+            <span class="user-gain__indicator"></span>
+            <input type="checkbox" name="Chack">Видел Чака Норриса
+          </label>
+          <label class="user-gain">
+            <span class="user-gain__indicator"></span>
+            <input type="checkbox" name="souvenire">Накупил сувениров
+          </label>
+          <label class="user-gain">
+            <span class="user-gain__indicator"></span>
+            <input type="checkbox" name="tower" checked>Удержал башню
+          </label>
+          <label class="user-gain">
+            <span class="user-gain__indicator"></span>
+            <input type="checkbox" name="hotel">Разгромил отель
+          </label>
+        </fieldset>
+        <fieldset class="form__user-contacts user-contacts">
+          <legend class="off-screen">Ваши контактные данные:</legend>
+          <label class="user-contacts__phone">Номерок телефончика<span class="off-screen">:</span>
+            <input type="tel" name="user-phone" value="Номер, пожалуйста">
+          </label>
+          <label class="user-contacts__phone">Адресок почты<span class="off-screen">:</span>
+            <input type="email" name="user-phone" value="Введите почту">
+          </label>
+        </fieldset>
+        <fieldset class="form__user-app user-app">
+          <legend class="user-app__title">С каким приложением путешествовали?</legend>
+          <label class="user-app__item">
+            <input type="radio" name="pink-ios" checked>Pink для iOS
+          </label>
+          <label class="user-app__item">
+            <input type="radio" name="pink-android">Pink на Android
+          </label>
+          <label class="user-app__item">
+            <input type="radio" name="pink-win-phone">Windows Phone
+          </label>
+        </fieldset>
+        <fieldset class="form__user-review user-review">
+          <legend class="user-review__title">Опишите свои эмоции<span class="off-screen">:</span></legend>
+          <textarea class="user-review__dscr" name="user-review" rows="8" cols="40" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <input class="form__submit btm" type="submit" name="submit" value="Отправить форму">
+        <p class="form__footnote">
+          <sup>*</sup> - обязательные поля
+        </p>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="#"><img src="http://placehold.it/150x100" alt="Pink"></a>
+      <div class="page-footer__social">
+        <ul class="social-links">
+          <li class="social-link social-link--insta"><a href="#"><span class="off-screen">instagram</span></a></li>
+          <li class="social-link social-link--fb"><a href="#"><span class="off-screen">twitter</span></a></li>
+          <li class="social-link social-link--youtube"><a href="#"><span class="off-screen">youtube</span></a></li>
+        </ul>
+      </div>
+      <p class="footer__developer">
+        <a href="https://htmlacademy.ru">Разработано<span class="off-screen">: HTML Academy</span></a>
+      <p>
+    </footer>
+    <div class="popup-error">
+      <p class="popup-error__title">Что-то пошло не так!</p>
+      <p class="popup-eror__dscr">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <button class="popup-error__close btn" type="button" name="popup-error-close">ОК</button>
+    </div>
+    <div class="popup-success">
+      <p class="popup-success__title">
+        Ваша заявка отправлена<span class="off-screen">.</span>
+      </p>
+      <p class="popup-succes__dscr">
+        Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+        оповестим вас.
+      </p>
+      <button class="popup-succes__close btn" type="button" name="popup-succes-close">Закрыть окно</button>
+    </div>
+  </body>
+</html>
