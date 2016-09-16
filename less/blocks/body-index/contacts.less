@@ -1,0 +1,28 @@
+.contacts {
+  .margin();
+  .padding(45px, 15px, 0, 15px);
+  .open-sans-light(30px, 300, 24px, #283645, uppercase);
+  .outline-block();
+  &__wrapper {
+    .padding(0, 0, 40px, 0);
+  }
+  &__title {
+  .open-sans-light(30px, 300, 24px, #283645, uppercase);
+  }
+  h3 {
+    .open-sans-bold(30px, 700, 24px, #283645, none);
+  }
+  &__item {
+    p {
+      .color(#d22856);
+    }
+  }
+  &__map {
+    min-height: 200px;
+    background: url(../../../img/icon-map-marker.svg),
+                url(../../../img/bg-map-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    .outline-element();
+  }
+}

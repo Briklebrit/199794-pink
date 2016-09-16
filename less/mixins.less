@@ -1,0 +1,55 @@
+.off-screen {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.outline-block(@width: 1px, @style: solid, @color: black) {
+  outline-width: @width;
+  outline-style: @style;
+  outline-color: @color;
+}
+
+.outline-element(@width: 1px, @style: solid, @color: lightblue) {
+  outline-width: @width;
+  outline-style: @style;
+  outline-color: @color;
+}
+
+.margin (@top: 0, @right: 0, @bottom: 0, @left: 0) {
+  margin-top: @top;
+  margin-right: @right;
+  margin-bottom: @bottom;
+  margin-left: @left;
+}
+
+.padding(@top: 0, @right: 0, @bottom: 0, @left: 0) {
+  padding-top: @top;
+  padding-right: @right;
+  padding-bottom: @bottom;
+  padding-left: @left;
+}
+
+.padding-offside (@top: 0, @left: 20px) {
+  padding: @top @left;
+}
+
+.display-none(@display: none) {
+  display: @display;
+}
+
+.background-col(@color) {
+  background-color: @color;
+}
+
+.position() {
+  position: absolute;
+}
+
+.block() {
+  display: block;
+}

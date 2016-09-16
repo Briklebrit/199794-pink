@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Pink</title>
-  </head>
-  <body>
-    <h1 class="off-screen">Pink</h1>
-    <header class="page-header">
-      <nav class="main-nav main-nav--closed">
-        <h2 class="off-screen">Главное меню сайта:</h2>
-        <a class="main-nav__logo">
-          <img src="http://placehold.it/150x100" alt="Pink">
-          <span class="off-screen">- главная страница сайта</span>
-        </a>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a>Главная</a></li>
-          <li class="main-nav__item"><a href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="utf-8">
+  <title>Pink</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="body-index">
+  <h1 class="off-screen">Pink</h1>
+  <header class="page-header">
+    <nav class="main-nav main-nav--closed">
+      <h2 class="off-screen">Главное меню сайта:</h2>
+      <a class="main-nav__logo">
+        <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+        <span class="off-screen">- главная страница сайта</span>
+      </a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a>Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+      </ul>
+    </nav>
       <div class="pink-offer">
         <h2 class="off-screen">Скачайте наше приложение!</h2>
         <a  class="pink-offer__download btn" href="#">Скачать приложение</a>
@@ -97,10 +99,14 @@
                 <li class="price__service">Комментарии<span class="price__checkbox price__checkbox--off"></span><small class="off-screen">(Не включены в пакет услуг.)</small></li>
               </ul>
             </div>
+            <ul class="price__switcher">
+              <li><span></span></li>
+              <li><span></span></li>
+            </ul>
           </div>
         </div>
       </section>
-      <section class="contancts">
+      <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Остались вопросы? свяжитесь с нами!</h2>
           <ul class="contacts__list">
@@ -123,6 +129,8 @@
               </p>
             </li>
           </ul>
+        </div>
+        <div class="contacts__map">
         </div>
       </section>
     </main>
