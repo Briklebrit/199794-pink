@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
   background-position: bottom center;
   .outline-block(1px, dashed, yellow);
+  &__wrapper {
+    .container();
+    .outline-element(1px, solid, red);
+    }
   &__list {
     .display-none();
     .padding();

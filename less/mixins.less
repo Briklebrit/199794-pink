@@ -34,10 +34,6 @@
   padding-left: @left;
 }
 
-.padding-offside (@top: 0, @left: 20px) {
-  padding: @top @left;
-}
-
 .display-none(@display: none) {
   display: @display;
 }
@@ -52,4 +48,30 @@
 
 .block() {
   display: block;
+}
+
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 700px;
+  }
+
+  @media @desktop-widths {
+    width: 1000px;
+  }
 }

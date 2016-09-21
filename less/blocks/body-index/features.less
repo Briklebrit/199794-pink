@@ -1,5 +1,9 @@
 .features {
   .outline-block();
+  &__wrapper {
+    .container();
+    .outline-element(1px, solid, red);
+  }
   &__call {
     .margin();
     .padding(45px, 35px, 64px, 35px);
@@ -19,11 +23,50 @@
   &__item {
     .outline-element();
   }
+  &__item--effect {
+    display: none;
+  }
   &__title {
     .margin();
   }
   &__dscr {
     .margin();
     .text-color(#283645);
+  }
+}
+
+@media @tablet-widths {
+  .features {
+    margin-bottom: 150px;
+    .clearfix();
+    &__item {
+      float: right;
+      width: 320px;
+      margin-left: 200px;
+    }
+    &__item--effect {
+      display: block;
+      float: none;
+      width: auto;
+      margin-bottom: -450px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .features{
+    margin-bottom: 0;
+    &__item {
+      float: left;
+      width: 320px;
+      min-height: 120px;
+      margin-left: 0;
+    }
+    &__item--effect {
+      display: block;
+      float: none;
+      width: auto;
+      margin-bottom: 0;
+    }
   }
 }
