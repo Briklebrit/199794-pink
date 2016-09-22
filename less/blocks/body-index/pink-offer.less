@@ -1,8 +1,25 @@
 .pink-offer {
+  min-height: 200px;
   .margin();
   .padding(28px, 0, 31px, 0);
-  .outline-block(1px, dotted, lightgreen);
+  .outline-block(5px, dotted, lightgreen);
+  &__wrapper {
+    .container();
+    .outline-element(1px, solid, red);
+  }
   &__dscr {
     .open-sans-light();
+  }
+}
+
+@media @tablet-widths {
+  .body-index .pink-offer {
+    min-height: 550px;
+  }
+}
+
+@media @desktop-widths {
+  .body-index .pink-offer {
+    min-height: 740px;
   }
 }

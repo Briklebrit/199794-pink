@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Pink</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -11,58 +12,71 @@
   <header class="page-header">
     <nav class="main-nav main-nav--closed">
       <h2 class="off-screen">Главное меню сайта:</h2>
-      <a class="main-nav__logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="Pink">
-        <span class="off-screen">- главная страница сайта</span>
-      </a>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a>Главная</a></li>
-        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-      </ul>
+      <div class="main-nav__wrapper">
+        <a class="main-nav__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+          <span class="off-screen">- главная страница сайта</span>
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+      </div>
     </nav>
       <div class="pink-offer">
-        <h2 class="off-screen">Скачайте наше приложение!</h2>
-        <a  class="pink-offer__download btn" href="#">Скачать приложение</a>
-        <div class="off-screen">Поддерживаемые платформы:</div>
-        <div class="pink-offer__support">
-          <ul class="support-platforms">
-            <li class="support-platform"><a href="#"><span class="off-screen">iPhone, iPad</span></a></li>
-            <li class="support-platform"><a href="#"><span class="off-screen">Android</span></a></li>
-            <li class="support-platform"><a href="#"><span class="off-screen">Windows Phone, OS X, Windows 8</span></a></li>
-          </ul>
+        <div class="pink-offer__wrapper">
+          <h2 class="off-screen">Скачайте наше приложение!</h2>
+          <a  class="pink-offer__download btn" href="#">Скачать приложение</a>
+          <div class="off-screen">Поддерживаемые платформы:</div>
+          <div class="pink-offer__support">
+            <ul class="support-platforms">
+              <li class="support-platform"><a href="#"><span class="off-screen">iPhone, iPad</span></a></li>
+              <li class="support-platform"><a href="#"><span class="off-screen">Android</span></a></li>
+              <li class="support-platform"><a href="#"><span class="off-screen">Windows Phone, OS X, Windows 8</span></a></li>
+            </ul>
+          </div>
+          <p class="pink-offer__dscr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <p class="pink-offer__dscr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </header>
     <main class="main-content">
       <section class="features">
         <h2 class="off-screen">Преимущества:</h2>
-        <div class="features__call">
-          <p>Устали от серости мегаполиса?</p>
-          <p>Нам есть, что вам предложить!</p>
-        </div>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__title">Поднимает настроение<span class="off-screen">!</span></h3>
-            <p class="features__dscr">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Меняет мир вокруг<span class="off-screen">!</span></h3>
-            <p class="features__dscr">
-              Cделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект<span class="off-screen">.</span>
-            </p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Заводит новых друзей<span class="off-screen">!</span></h3>
-            <p class="features__dscr">
-              Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых<span class="off-screen">.</span>
-            </p>
-          </li>
-        </ul>
+          <div class="features__wrapper">
+            <div class="features__call">
+              <p>Устали от серости мегаполиса?</p>
+              <p>Нам есть, что вам предложить!</p>
+            </div>
+            <ul class="features__list">
+              <li class="features__item">
+                <h3 class="features__title">Поднимает настроение<span class="off-screen">!</span></h3>
+                <p class="features__dscr">
+                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                </p>
+              </li>
+              <li class="features__item">
+                <h3 class="features__title">Меняет мир вокруг<span class="off-screen">!</span></h3>
+                <p class="features__dscr">
+                  Cделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект<span class="off-screen">.</span>
+                </p>
+              </li>
+              <li class="features__item">
+                <h3 class="features__title">Заводит новых друзей<span class="off-screen">!</span></h3>
+                <p class="features__dscr">
+                  Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых<span class="off-screen">.</span>
+                </p>
+              </li>
+              <li class="features__item features__item--effect">
+                <h3 class="features__title">Эффект на 24 часа!</h3>
+                <p class="features__dscr">
+                  Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+                </p>
+                <a href="#">Узнать больше об исследовании</a>
+              </li>
+            </ul>
+          </div>
       </section>
       <section class="reviews">
         <h2 class="off-screen">Отзывы о нас:</h2>
@@ -72,7 +86,7 @@
           <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
           <div class="reviews__list">
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__autor">Николай Петров</cite>
+              <cite class="reviews__autor"><b>Николай Петров</b><span>25 лет, водитель трамвая</span></cite>
               <p>
                 &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                 А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
@@ -87,23 +101,36 @@
           <input class="price__input" type="radio" name="price" id="price-input-1">
           <input class="price__input" type="radio" name="price" id="price-input-2" checked>
           <input class="price__input" type="radio" name="price" id="price-input-3">
-          <div class="price__list">
-            <div class="price__item">
-              <p class="price__title">
-                <span class="price__name">Стандарт</span>
-                3,99 USD<span class="price__sticker">Хит</span>
-              </p>
-              <ul class="price__services">
-                <li class="price__service">Розовый фильтр<span class="price__checkbox price__checkbox--on"></span></li>
-                <li class="price__service">Смайлики<span class="price__checkbox price__checkbox--on"></span></li>
-                <li class="price__service">Комментарии<span class="price__checkbox price__checkbox--off"></span><small class="off-screen">(Не включены в пакет услуг.)</small></li>
-              </ul>
-            </div>
-            <ul class="price__switcher">
-              <li><span></span></li>
-              <li><span></span></li>
-            </ul>
-          </div>
+          <table class="price__table">
+            <tr>
+              <th class="header-1 table-off"></th>
+              <th class="header-2 table-off">База <span>1,99 USD</span></th>
+              <th class="header-3">Стандарт <span>3,99 USD</span></th>
+              <th class="header-4 table-off">Анлим <span>9,99 USD</span></th>
+            </tr>
+            <tr>
+              <td class="col-1">Розовый фильтр</td>
+              <td class="col-2"><span class="price__checkbox price__checkbox--on">on</td>
+              <td class="col-3 table-off"><span class="price__checkbox price__checkbox--off">off</td>
+              <td class="col-4 table-off"><span class="price__checkbox price__checkbox--off">off</td>
+            </tr>
+            <tr>
+              <td class="col-1">Смайлики</td>
+              <td class="col-2"><span class="price__checkbox price__checkbox--on">on</td>
+              <td class="col-3 table-off"><span class="price__checkbox price__checkbox--on">on</td>
+              <td class="col-4 table-off"><span class="price__checkbox price__checkbox--off">off</td>
+            </tr>
+            <tr>
+              <td class="col-1">Комментарии</td>
+              <td class="col-2 table-off"><span class="price__checkbox price__checkbox--on">on</td>
+              <td class="col-3 table-off"><span class="price__checkbox price__checkbox--on">on</td>
+              <td class="col-4"><span class="price__checkbox price__checkbox--off"><small class="off-screen">(Не включены в пакет услуг.)</small>off</td>
+            </tr>
+          </table>
+          <ul class="price__switcher">
+            <li><span></span></li>
+            <li><span></span></li>
+          </ul>
         </div>
       </section>
       <section class="contacts">

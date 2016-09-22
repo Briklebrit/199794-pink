@@ -1,6 +1,7 @@
 .user-photo {
   .margin();
   .outline-block();
+  .clearfix();
   &__item {
     .padding();
     .margin(0, 0, 20px, 0);
@@ -30,5 +31,31 @@
   &__like {
     .open-sans-light(24px, 300, 14px, #d22856, uppercase);
     text-decoration: none;
+  }
+}
+
+@media @tablet-widths {
+  .user-photo {
+    &__item {
+      float:left;
+      width: 45%;
+      min-height: 400px;
+    }
+    &__item:first-of-type {
+      width: 100%;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .user-photo {
+    &__item {
+      float:left;
+      width: 300px;
+      min-height: 400px;
+    }
+    &__item:first-of-type {
+      width: 100%;
+    }
   }
 }
