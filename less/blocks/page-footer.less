@@ -1,0 +1,126 @@
+ .page-footer {
+  display: none;
+}
+
+.body-form .page-footer {
+  display: block;
+  .container-fluid();
+
+  &__wrapper {
+    width: 87.5%;
+    margin: 0 auto;
+  }
+
+
+  &__logo {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__developer {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+      a {
+        display: block;
+        padding: 5px 30% 5px 0;
+        .open-sans(18px, 400, 14px, @text-col, none);
+        text-decoration: none;
+        background-image: url(../img/htmlacademy.svg);
+        background-repeat: no-repeat;
+        background-position: top  right;
+        background-size: 30px;
+      }
+  }
+}
+
+
+@media @tablet-widths {
+.body-index .page-footer {
+    display: block;
+    .container-fluid();
+    padding: 0 6.25%;
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    &__logo {
+      display: block;
+      width: 23.87%;
+      min-width: 148px;
+    }
+
+    &__social {
+      width: 51.93%;
+      min-width: 322px;
+    }
+
+    &__developer {
+      display: flex;
+      align-items: center;
+      width: 19.35%;
+      min-width: 120px;
+      margin: 0;
+      padding: 0;
+
+        a {
+          display: block;
+          padding: 5px 30% 5px 0;
+          .open-sans(18px, 400, 14px, @text-col, none);
+          text-decoration: none;
+          background-image: url(../img/htmlacademy.svg);
+          background-repeat: no-repeat;
+          background-position: top  right;
+          background-size: 30px;
+        }
+    }
+  }
+}
+
+
+
+
+
+
+
+@media @desktop-widths {
+  .page-footer {
+    display: block;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
+
+    &__logo {
+      width: 150px;
+    }
+
+    &__social {
+      width: 200px;
+    }
+
+    &__developer {
+      width: 150px;
+
+        a {
+          display: block;
+          box-sizing: border-box;
+          padding:  20px 40px 20px 0;
+          margin-top: 25px;
+          font-size: 18px;
+          text-decoration: none;
+          background-image: url(../img/htmlacademy.svg);
+          background-repeat: no-repeat;
+          background-position: top 5px  right -8px;
+          background-size: 40px;
+        }
+    }
+  }
+}

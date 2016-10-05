@@ -1,0 +1,231 @@
+.features {
+
+  &__call {
+    .container-fluid();
+    padding: 40px 12.5% 30px 12.5%;
+    .open-sans-light(30px, 300, 24px, @text-col, none);
+    text-align: center;
+  }
+
+  &__list-wrapper {
+      background-color: @grey-bg;
+  }
+
+  &__list {
+    .flex();
+    flex-direction: column;
+    .container-fluid();
+    .list-style();
+    padding: 80px 6.25% 290px 6.25%;
+    background-color: @grey-bg;
+    background-image: url(../img/iphone-screen-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-position: bottom -45px center;
+  }
+
+  &__item {
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    .open-sans-bold();
+    letter-spacing: 1px;
+    color: @b;
+
+  }
+
+  &__dscr {
+    margin: 0;
+    .open-sans();
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  &__effect {
+    display: none;
+  }
+}
+
+.features__call p {
+    margin: 0;
+    margin-bottom: 27px;
+  }
+
+.features__call p:last-of-type {
+  margin-bottom: 0;
+}
+
+
+
+
+@media @tablet-widths {
+  .features {
+
+    &__call {
+      padding: 50px 0 45px 0;
+      .open-sans-light(50px, 300, 40px, @text-col, none);
+
+      p:first-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__list {
+      align-items: flex-end;
+      padding: 69px 6.25% 0 6.25%;
+      background-image: none;
+    }
+
+    &__item {
+      width: 50%;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    &__item:nth-child(2) {
+      margin-bottom: 33px;
+    }
+
+    &__item:nth-child(3) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .features__call p:last-child {
+    padding: 0 22.58%;
+  }
+
+
+  .features__effect {
+    display: block;
+
+    &-wrapper {
+      .container-fluid();
+      padding: 0 6.25% 0 6.25%;
+    }
+
+    &-inner {
+      .flex();
+      justify-content: flex-end;
+      padding: 97px 0 125px 0;
+
+      &-item {
+        width: 44.285%;
+        min-width: 310px;
+        text-align: left;
+      }
+    }
+
+    h3 {
+      margin: 0;
+      margin-bottom: 12px;
+      .open-sans-bold(34px, 700, 30px, @b, none);
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 8px;
+      line-height: 24px;
+    }
+
+    a {
+      color: #d22856;
+    }
+  }
+
+}
+
+
+
+
+@media @desktop-widths {
+  .features {
+
+    &__call {
+      padding: 80px 0 80px 0;
+      .open-sans-light(55px, 300, 50px, @text-col, none);
+    }
+
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0;
+    }
+
+    &__item {
+      .flex();
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 300px;
+      height: 560px;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    &__item:nth-child(3) {
+      margin-bottom: 0;
+    }
+
+    &__item:nth-child(2) {
+        margin-bottom: 28px;
+    }
+
+
+    &__title {
+      margin-bottom: 15px;
+      .open-sans-bold(35px, 700, 30px, @b, none);
+    }
+
+    &__dscr {
+      margin: 0;
+      .open-sans (30px, 400, 18px, @text-col, none);
+      padding: 0 35px;
+    }
+  }
+
+.features__item:nth-child(2) .features__title {
+    padding: 0 20px;
+  }
+
+
+  .features__effect {
+    display: block;
+    background-color: @grey-bg;
+
+    &-wrapper {
+      .container-fluid();
+    }
+
+    &-inner {
+      padding: 97px 0 112px 0;
+
+      &-item {
+        width: 572px;
+        padding: 35px 0 0 0;
+        text-align: left;
+      }
+    }
+
+    h3 {
+      .open-sans-bold(35px, 700, 30px, @b, none);
+      margin-bottom: 20px;
+
+      span {
+        display: none;
+      }
+    }
+
+    p {
+      margin-bottom: 30px;
+      .open-sans (30px, 400, 18px, @text-col, none)
+    }
+
+    a {
+      .open-sans (30px, 400, 18px, #d22856, none)
+    }
+  }
+}
