@@ -11,12 +11,14 @@
 
   &__item {
     padding: 20px 0;
+    padding-bottom: 30px;
     background-color: #f2f2f2;
   }
 
   &__inner {
     width: 87.5%;
     margin: 0 auto;
+
   }
 
   &__settings {
@@ -24,18 +26,50 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px 0;
-    margin-bottom: 55px;
+    margin-bottom: 37px;
+    margin-top: 15px;
 
   }
 
   &__parametr {
     .size(50px, 50px);
     margin-bottom: 47px;
-    background-color: red;
+    // background-color: red;
+
+    svg {
+      position: absolute;
+      display: block;
+      cursor: pointer;
+
+      &:hover path {
+        fill: #8d949b;
+      }
+
+      &:hover rect {
+        fill: #8d949b;
+      }
+
+      &:active path{
+        fill: @form-text;
+      }
+
+      &:active rect{
+        fill: @form-text;
+      }
+    }
+  }
+
+  &__parametr:first-child svg {
+    padding-left: 10px;
+  }
+
+  &__parametr:nth-child(3) svg {
+    padding-top: 10px;
   }
 
   &__main-scale {
     position: relative;
+    top: -15px;
     width:100%;
 
     .user-upload__range-bar {
@@ -52,6 +86,10 @@
       border: 2px solid #d43560;
       border-radius: 50%;
       background-color: @w;
+
+      &:hover {
+        background-color: @form-text;
+      }
     }
   }
 
@@ -103,19 +141,22 @@
 
 
 @media @tablet-widths {
-
   .user-upload {
+    &__item {
+      padding: 60px 0 0 0;
+    }
 
     &__title {
       .container-fluid();
       padding: 30px 6.25% 68px 6.25%;
+      margin-bottom: 0;
       line-height: 30px;
       font-size: 18px;
     }
 
     img {
       display:block;
-      width: 48.387%;
+      // width: 48.387%;
       min-height: 400px;
       margin-bottom: 50px;
     }
@@ -137,15 +178,35 @@
       .flex();
       flex-direction: column;
       justify-content: space-between;
-      padding: 20px 0;
+      padding:  0;
       margin-bottom: 40px;
 
     }
 
     &__parametr {
+      position: relative;
       .size(100%, 50px);
       margin-bottom: 20px;
-      background-color: red;
+      // background-color: red;
+
+      svg {
+        width: 25px;
+        top: -18px;
+        left: 30px;
+      }
+    }
+
+    &__parametr:first-child svg {
+      width: 23px;
+      top: -19px;
+      left: 30px;
+      padding-left: 0;
+    }
+
+    &__parametr:nth-child(3) svg {
+      width: 17px;
+      left: 32px;
+      padding-top: 10px;
     }
 
     &__main-scale {
@@ -154,6 +215,7 @@
 
     &__scale {
       position: relative;
+      top: -21px;
       width:100%;
 
       .user-upload__range-bar {
@@ -173,6 +235,10 @@
         border: 2px solid #d43560;
         border-radius: 50%;
         background-color: @w;
+
+        &:hover {
+          background-color: @form-text;
+        }
       }
     }
 
@@ -184,9 +250,7 @@
     &__action {
       margin-bottom: 25px;
     }
-
   }
-
 }
 
 
@@ -195,6 +259,11 @@
 
 @media @desktop-widths {
   .user-upload {
+
+    &__item {
+      padding-top: 0;
+      background-color: @w;
+    }
 
     &__title {
       .container-fluid();
@@ -216,7 +285,9 @@
       justify-content: space-between;
       width: 940px;
       margin: 0 auto;
-      padding-top: 20px;
+      padding-top: 40px;
+      padding-bottom: 5px;
+      background-color: #f2f2f2;
     }
 
     &__settings-inn {
@@ -240,7 +311,7 @@
 
       .user-upload__range-bar {
         position: absolute;
-        top: 25px;
+        top: 27px;
         right: 6.666%;
         width: 285px;
         margin: 0 auto;
@@ -249,7 +320,7 @@
 
       .user-upload__toggle {
         position: absolute;
-        top: 19px;
+        top: 21px;
         right: 20%;
         .size(10px, 10px);
         border: 2px solid #d43560;
@@ -285,6 +356,37 @@
           background-color: #d22856;
           color: rgba(255, 255, 255, 0.3);
         }
+      }
+
+      &__parametr {
+        position: relative;
+        .size(100%, 50px);
+        margin-bottom: 20px;
+        // background-color: red;
+
+        svg {
+          width: 50px;
+          top: -10px;
+          left: 65px;
+        }
+      }
+
+      &__parametr:nth-child(3) {
+        margin-bottom: 0;
+      }
+
+      &__parametr:first-child svg {
+        width: 50px;
+        top: -15px;
+        left: 60px;
+        padding-left: 0;
+      }
+
+      &__parametr:nth-child(3) svg {
+        width: 40px;
+        top: -15px;
+        left: 65px;
+        padding-top: 10px;
       }
   }
 }

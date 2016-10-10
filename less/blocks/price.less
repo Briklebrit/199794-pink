@@ -1,6 +1,9 @@
 .price {
-  padding: 92px 6.25% 44px 6.25%;
-    background-color: @grey-bg;
+  padding: 125px 6.25% 40px 6.25%;
+  background-color: @grey-bg;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-position: top;
   &__wrapper {
     .container-fluid();
   }
@@ -88,10 +91,24 @@
 }
 
 .row-1 .header-3 {
+  position: relative;
   display: block;
   width: 100%;
   background-color: #283645;
+  background-image: url(../img/bg-hit.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  .price__hit {
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    .open-sans-bold(24px, 700, 14px, @w, uppercase);
+    transform: rotate(-45deg);
+  }
 }
+
+
 
 .price td {
   display: none;
@@ -117,7 +134,7 @@
 
 @media @tablet-widths {
   .price {
-    padding: 83px 6.25% 33px 6.25%;
+    padding: 105px 6.25% 30px 6.25%;
 
     &__table {
 
@@ -188,6 +205,16 @@
   .row-1 .header-3 {
     display: table-cell;
     width: 25.161%;
+    background-image: url(../img/bg-hit-tablet.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    .price__hit {
+      top: 9px;
+      left: 4px;
+      .open-sans-bold(24px, 700, 14px, @w, uppercase);
+      transform: rotate(-45deg);
+    }
   }
 
   .price td {
@@ -214,7 +241,8 @@
 
 @media @desktop-widths {
   .price {
-    padding: 150px 0 65px 0;
+    padding: 160px 0 67px 0;
+    background-size: contain;
 
 
     &__table {
@@ -246,6 +274,18 @@
       top: 15px;
       left: 100px;
 
+    }
+
+  .row-1 .header-3 {
+    background-image: url(../img/bg-hit.svg);
+    background-repeat: no-repeat;
+    background-position: top left ;
+
+
+    .price__hit {
+      top: 15px;
+      left: 8px;
+    }
     }
   }
 }
