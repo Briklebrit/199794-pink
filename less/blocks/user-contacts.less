@@ -17,6 +17,7 @@
     text-transform: uppercase;
 
     input {
+      position: relative;
       width: 100%;
     }
   }
@@ -42,16 +43,21 @@
   .user-contacts {
     width: 88.571%;
     margin: 0 auto;
-    padding: 31px 8.377% 0 8.377%;
+    padding: 0 8.377% 0 8.377%;
     border: 2px solid #e5e5e5;
     box-sizing: border-box;
 
       &__title {
-        display: block;
+        position: relative;
+        top: -30px;
+        display: inline-block;
+        margin-left: 24.419%;
         padding: 0 4.838%;
         .open-sans();
         color: @form-text;
         text-transform: uppercase;
+        vertical-align: top;
+        background-color: @w;
 
       }
 
@@ -81,33 +87,51 @@
       margin-bottom: 28px;
     }
   }
+
+  .user-contacts__phone input {
+
+
+      background-image: url(../img/icon-phone.svg),
+                        url(../img/form_icon.svg);
+      background-repeat: no-repeat, no-repeat;
+      background-position: center right 20px, right;
+      background-size: auto, auto;
+  }
+
+  .user-contacts__email input {
+      background-image: url(../img/icon-mail.svg),
+                        url(../img/form_icon.svg);
+      background-repeat: no-repeat, no-repeat;
+      background-position: center right 20px, right;
+      background-size: auto, auto;
+  }
+
 }
 
 
 @media @desktop-widths {@media @tablet-widths {
   .user-contacts-wrapper {
     .container-fluid();
-    padding-top: 0;
+    padding-top: 15px;
   }
 
   .user-contacts {
+    position: relative;
     .flex();
-    justify-content: space-between;
+    justify-content: space-around;
     width: 940px;
     margin: 0 auto;
     padding: 0;
-    padding-top: 25px;
+    padding-top: 40px;
     border: 2px solid #e5e5e5;
     box-sizing: border-box;
 
       &__title {
-        display: block;
-        padding: 0 4.838%;
-        .open-sans();
-        color: @form-text;
-        text-transform: uppercase;
-
-      }
+        position: absolute;
+        top: -18px;
+        left: 325px;
+        margin: 0;
+        }
 
     &__phone,
     &__email {
@@ -126,11 +150,11 @@
     }
 
     &__phone {
-      margin-left: 60px;
+      margin-left: 0;
     }
 
     &__email {
-      margin-right: 60px;
+      // margin-right: 60px;
     }
 
     &__mobile {

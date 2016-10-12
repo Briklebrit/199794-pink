@@ -1,7 +1,7 @@
 .user-review {
   .container-fluid();
   margin: 0;
-  padding: 0 6.25% 45px 6.25%;
+  padding: 0 6.25% 40px 6.25%;
   border: 0;
 
   &__title {
@@ -19,6 +19,7 @@
     .open-sans(30px, 400, 18px, @form-main-text, none);
     box-sizing: border-box;
     border: 2px solid #e5e5e5;
+
   }
 }
 
@@ -27,25 +28,32 @@
 @media @tablet-widths {
 .user-review-wrapper {
   .container-fluid();
-  padding-top: 51px;
+  padding-top: 65px;
 }
 
   .user-review {
     width: 88.571%;
     margin: 0 auto;
-    margin-bottom: 68px;
+    margin-bottom: 60px;
     padding: 0;
     border: 2px solid #e5e5e5;
 
+
+
     &__title {
+      position: relative;
+      top: -16px;
+      left: 29.032%;
+      display: inline-block;
       margin: 0;
       padding: 0 5.645%;
+      background-color: @w;
     }
 
     textarea {
       width: 80.645%;
       height: 193px;
-      margin: 31px auto 50px 9.677%;
+      margin: 14px auto 50px 9.677%;
       padding: 15px 20px 20px 20px;
     }
   }
@@ -58,7 +66,8 @@
   @media @tablet-widths {
   .user-review-wrapper {
     .container-fluid();
-    padding-top: 51px;
+    padding-top: 65px;
+    padding-bottom: 0;
   }
 
     .user-review {
@@ -70,14 +79,15 @@
       box-sizing: border-box;
 
       &__title {
+        left: 340px;
         margin: 0;
-        padding: 0 5.645%;
+        padding: 0 40px;
       }
 
       textarea {
         width: 820px;
         height: 130px;
-        margin: 30px 60px 38px 60px;
+        margin: 13px 60px 38px 60px;
         padding-left: 20px;
         box-sizing: border-box;
       }

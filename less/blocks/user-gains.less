@@ -9,13 +9,15 @@
   border: 0;
 
   &__title {
-    margin: 39px 0 37px 0;
+    display: inline-block;
+    margin: 39px auto 37px auto;
     padding: 0 8.928%;
     .open-sans();
     color: @form-text;
     line-height: 18px;
     text-transform: uppercase;
     text-align: center;
+    vertical-align: top;
   }
 
   &__item {
@@ -79,20 +81,25 @@
 @media @tablet-widths {
   .user-gains-wrapper {
     .container-fluid();
-    padding-top: 55px;
+    padding-top: 60px;
     background-color: @w;
   }
 
   .user-gains {
     width: 88.571%;
     padding: 0;
-    padding-top: 42px;
+    padding-top: 22px;
     margin: 0 auto;
     border: 2px solid #e5e5e5;
 
     &__title {
+      position: relative;
+      top: -32px;
+      z-index: 10;
       margin: 0;
-      padding: 0 4.838%;
+      margin-left: 14.032%;
+      padding: 0 30px;
+      background-color: @w;
     }
 
     &__item {
@@ -116,34 +123,41 @@
   @media @tablet-widths {
     .user-gains-wrapper {
       .container-fluid();
-      padding-top: 55px;
+      padding: 0;
+      padding-top: 65px;
       background-color: @w;
     }
 
     .user-gains {
+      position: relative;
       .flex();
       flex-direction: column;
       flex-wrap: wrap;
       align-items: flex-end;
-
       width: 940px;
-      height: 190px;
+      height: 170px;
       padding: 0;
-      padding-top: 45px;
+      padding-top: 55px;
+      padding-bottom: 0;
       margin: 0 auto;
       border: 2px solid #e5e5e5;
 
       &__title {
+        position: absolute;
+        top: -10px;
+        left: 250px;
+        z-index: 10;
+        display: inline-block;
         margin: 0;
-        padding: 0 4.838%;
+        padding: 0 30px;
       }
 
       &__item {
         width: 200px;
         padding: 0;
-        padding-left: 60px;
+        padding-left: 50px;
         margin-bottom: 50px;
-        margin-left: 58px;
+        margin-left: 0;
         }
 
 
